@@ -1,4 +1,5 @@
 # Giphy Clone
 
-A clone of Giphy built with React.
-**Live Demo**: [https://giphy-clone-blond.vercel.app/](https://giphy-clone-blond.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://giphy-clone-blond.vercel.app/)
+
+A clone of Giphy built with React and deployed on Vercel.
