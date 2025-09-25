@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <GiffContext>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </GiffContext>
   );
 };

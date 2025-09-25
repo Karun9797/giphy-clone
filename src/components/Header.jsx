@@ -19,7 +19,6 @@ const Header = () => {
   };
   useEffect(() => {
     fetchCategories();
-    console.log(categories);
   });
   return (
     <nav>
@@ -66,7 +65,7 @@ const Header = () => {
           </button>
         </div>
         {showCategories && (
-          <div className="absolute w-full top-18 gradient px-20 py-10 right-0">
+          <div className="absolute w-full rounded-sm top-14 gradient px-20 py-10 right-0 z-100">
             <span className="text-3xl font-extrabold">Categories</span>
             <hr className="bg-gray-100 opacity-50 my-5" />
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-8">
@@ -75,6 +74,7 @@ const Header = () => {
                   key={category.name}
                   className="font-bold"
                   to={`/${category.name_encoded}`}
+                  onClick={() => setShowCategories(!showCategories)}
                 >
                   {category.name}
                 </Link>
