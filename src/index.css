@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .gradient {
+    @apply bg-gradient-to-r from-teal-600 via-blue-600 to-pink-600 cursor-pointer;
+  }
+  .hover\:gradient:hover {
+    @apply bg-gradient-to-r from-teal-600 via-blue-600 to-pink-600 cursor-pointer;
+  }
+}
